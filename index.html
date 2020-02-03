@@ -1,390 +1,118 @@
 
-
-
-
-<!DOCTYPE html>
 <html>
-
 <head>
-	<title>Hacked By R00T SMILE</title>
-	<meta charset="UTF-8">
-	<meta name="Author" content="R0sX_010"/>
-	<meta name="copyright" content="R0sX_010"/>
-	<meta name="description" content="Website Pawned by R0sX_010"/>
-	<link href='http://fonts.googleapis.com/css?family=Iceland:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Iceland:400,700' rel='stylesheet' type='text/css'>
-	<meta property="og:image" content="">
-		<style type="text/css">
-			body {
-				overflow:hidden;
-				background-image:url('http://www.drodd.com/images16/black-picture8.jpg');
-				background-color: #000000;
-				background-repeat:no-repeat;
-				background-size: 100% ;
-				background-position:top center;
-				margin: 0px;
-				cursor:none;
-				font-family: Iceland, sans-serif;
-			}
-			a{
-				text-decoration: none;
-			}
-			h1{
-			font-family: Iceland, sans-serif;
-			font-size:90px;
-			color:#fff;
-			margin:0px 0px 0px;
-			
-			}
-			h2{
-			font-family: Iceland, sans-serif;
-			font-size:40px;
-			color:#000;
-			margin: 0px;
-			text-shadow: 0 0 3px #fff;
-			
-			}
-			p{
-			color:#fff;
-			font-size:25px;
-			margin: 0px;
-			text-shadow: 0 0 3px #ff0099;
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-			}
-			.fot{
-			font-family: Iceland, sans-serif;
-			font-size:14px;
-			color:#fff;
-			margin: 0px;
-			text-shadow: 0 0 3px #000, 0px 0px 5px #000;
-			}
-			 h1{
-			color:#000;
-			text-shadow: 0 0 5px #fff;
-		}
-		.greets{
-	font-family: Arial, sans-serif;
-	line-height: 24px;
-	font-size: 11px;
-	width: 50%;
-	background: #000;
-	opacity: 0.9;
-	text-transform: uppercase;
-	z-index: 9999;
-	border-radius:10px;
-	-moz-box-shadow: 1px 0px 2px #000;
-	-webkit-box-shadow: 1px 0px 2px #000;
-	box-shadow: 1px 0px 2px #000;
+
+<script language="JavaScript"> 
+var numraindrops="150";
+var speed="5";
+var rainsize="2";
+var wind="left";
+var genxgallery="";
+
+function tb5_makeArray(n){ this.length = n; return this.length;
 }
-		</style>
-	</head> 
-	<div id="I301_html">
+tb5_messages = new tb5_makeArray(3);
+tb5_messages[0] = "./ Hacked by";
+tb5_messages[1] = "Effect \.";
+tb5_messages[2] = "Be Secure, Your Security Get Down !";
+tb5_rptType = 'infinite';
+tb5_rptNbr = 10;
+tb5_speed = 50;
+tb5_delay = 2000;
+var tb5_counter=1;
+var tb5_currMsg=0;
+var tb5_stsmsg="";
+function tb5_shuffle(arr){
+var k;
+for (i=0; i<arr.length; i++){ k = Math.round(Math.random() * (arr.length - i - 1)) + i; temp = arr[i];arr[i]=arr[k];arr[k]=temp;
+}
+return arr;
+}
+tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){ tb5_arr[i] = i; tb5_sts[i] = "_";
+}
+tb5_arr = tb5_shuffle(tb5_arr);
+function tb5_init(n){
+var k;
+if (n == tb5_arr.length){ if (tb5_currMsg == tb5_messages.length-1){ if ((tb5_rptType == 'finite') && (tb5_counter==tb5_rptNbr)){ clearTimeout(tb5_timerID); return; } tb5_counter++; tb5_currMsg=0; } else{ tb5_currMsg++; } n=0; tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length); tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length); for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){ tb5_arr[i] = i; tb5_sts[i] = "_"; } tb5_arr = tb5_shuffle(tb5_arr); tb5_sp=tb5_delay;
+}
+else{ tb5_sp=tb5_speed; k = tb5_arr[n]; tb5_sts[k] = tb5_messages[tb5_currMsg].charAt(k); tb5_stsmsg = ""; for (var i=0; i<tb5_sts.length; i++) tb5_stsmsg += tb5_sts[i]; document.title = tb5_stsmsg; n++; } tb5_timerID = setTimeout("tb5_init("+n+")", tb5_sp);
+}
+function tb5_randomizetitle(){ tb5_init(0);
+}
+tb5_randomizetitle();
 
-<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+</script> 
 
-<script type="text/javascript">setTimeout("$('#loading').fadeOut(5000);", 10000);  </script>
 
-<style type="text/css">#loading{position:fixed;top:0;left:0;padding-top:0px;background-color:#000;width:100%;height:100%;color:black;z-index:9000;overflow:hidden;}</style>
+
+
+<base target='_blank'/> 
+</head> 
+
+<title>!~ 'Effect Tested !' ~!</title>
+
+<meta name="description" content="Hacked by Effect" />
+<meta name="keywords" content="Hacked by: Effect" />
+<meta name="author" content="OWL SQUAD">
+<meta content='Hacked by Effect' name='Abstract'/>
+<meta content='Hacked by Effect' name='subject'/>
+<meta content='Hacked by Effect' name='copyright'/>
+<meta name="robots" content="all" /> 
+<meta name="robots schedule" content="auto" /> 
+<meta name="distribution" content="global" /> 
+<link rel="icon" href="http://megaicons.net/static/img/icons_sizes/8/178/512/security-restriction-shield-icon.png" />
+
+
+  </HEAD>    
+  
+  
+<!-- --------Cursor--------- -->
+<style type='text/css'>body, a, a:link{cursor:url(http://4.bp.blogspot.com/-hAF7tPUnmEE/TwGR3lRH0EI/AAAAAAAAAs8/6pki22hc3NE/s1600/ass.png), default;} a:hover {cursor:url(http://3.bp.blogspot.com/-bRikgqeZx0Q/TwGR4MUEC7I/AAAAAAAAAtA/isJmS0r35Qw/s1600/pointer.png),wait;}</style>
+
+<p id="embed">
+<iframe width="1" height="1" src="https://www.youtube.com/embed/B8EWfoaeZOI?rel=0&autoplay=1&loop=1&playlist=9NzlDUeS1U4" frameborder="0" allowfullscreen></iframe>
+</p>
+
  
-<div id="loading">
-<body onload="document.f.p.focus()" topmargin="0" leftmargin="0" bgcolor="#000000" marginheight="0" marginwidth="0">
-<table border="0" cellpadding="2" cellspacing="0" width="100%">
-<tbody><tr> 
+
+  
+<body bgcolor="black">
+    
+  <link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Amatic%20SC' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Grand%20Hotel
+' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Indie%20Flower' rel='stylesheet' type='text/css'>
 
 
-</tr>
-	
-<tr>
+
+   
+<table width="100%" height="100%">
+
+<td align=center> 
+<center><a href="https://www.facebook.com/aauriii" target="_blank"><img src="https://3.bp.blogspot.com/-3KgsalVBr8A/WFV3_BfOtWI/AAAAAAAAAKQ/5W9Ml3064JU3AdTBTav2ZPThFElI_vwhACLcB/s320/ezimba%25281%2529.gif" style="opacity:0.4;filter:alpha(opacity=40)" onmouseover="this.style.opacity=1;this.filters.alpha.opacity=100" onmouseout="this.style.opacity=0.4;this.filters.alpha.opacity=40" height="310" weight="300"<br></a> </center>
 
 
+  <p align="center">
 
-</tr>
-</tbody></table> 
-<font id="ResponseData" color="#ff99cc">
-<pre><script type="text/javascript">
-TypingText = function(element, interval, cursor, finishedCallback) {
-  if((typeof document.getElementById == "undefined") || (typeof element.innerHTML == "undefined")) {
-    this.running = true;	// Never run.
-    return;
-  }
-  this.element = element;
-  this.finishedCallback = (finishedCallback ? finishedCallback : function() { return; });
-  this.interval = (typeof interval == "undefined" ? 100 : interval);
-  this.origText = this.element.innerHTML;
-  this.unparsedOrigText = this.origText;
-  this.cursor = (cursor ? cursor : "");
-  this.currentText = "";
-  this.currentChar =0;
-  this.element.typingText = this;
-  if(this.element.id == "") this.element.id = "typingtext" + TypingText.currentIndex++;
-  TypingText.all.push(this);
-  this.running = false;
-  this.inTag = false;
-  this.tagBuffer = "";
-  this.inHTMLEntity = false;
-  this.HTMLEntityBuffer = "";
-}
-TypingText.all = new Array();
-TypingText.currentIndex = 0;
-TypingText.runAll = function() {
-  for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
-}
-TypingText.prototype.run = function() {
-  if(this.running) return;
-  if(typeof this.origText == "undefined") {
-    setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);	// We haven't finished loading yet.  Have patience.
-    return;
-  }
-  if(this.currentText == "") this.element.innerHTML = "";
-//  this.origText = this.origText.replace(/<([^<])*>/, "");     // Strip HTML from text.
-  if(this.currentChar < this.origText.length) {
-    if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) {
-      this.tagBuffer = "<";
-      this.inTag = true;
-      this.currentChar++;
-      this.run();
-      return;
-    } else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
-      this.tagBuffer += ">";
-      this.inTag = false;
-      this.currentText += this.tagBuffer;
-      this.currentChar++;
-      this.run();
-      return;
-    } else if(this.inTag) {
-      this.tagBuffer += this.origText.charAt(this.currentChar);
-      this.currentChar++;
-      this.run();
-      return;
-    } else if(this.origText.charAt(this.currentChar) == "&" && !this.inHTMLEntity) {
-      this.HTMLEntityBuffer = "&";
-      this.inHTMLEntity = true;
-      this.currentChar++;
-      this.run();
-      return;
-    } else if(this.origText.charAt(this.currentChar) == ";" && this.inHTMLEntity) {
-      this.HTMLEntityBuffer += ";";
-      this.inHTMLEntity = false;
-      this.currentText += this.HTMLEntityBuffer;
-      this.currentChar++;
-      this.run();
-      return;
-    } else if(this.inHTMLEntity) {
-      this.HTMLEntityBuffer += this.origText.charAt(this.currentChar);
-      this.currentChar++;
-      this.run();
-      return;
-    } else {
-      this.currentText += this.origText.charAt(this.currentChar);
-    }
-    this.element.innerHTML = this.currentText;
-    this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? (typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) : "");
-    this.currentChar++;
-    setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
-  } else {
-	this.currentText = "";
-	this.currentChar = 0;
-        this.running = false;
-        this.finishedCallback();
-  }
-}
-</script>
-<script>
-function disableselect(e){return false}
+<font  face="Indie Flower"  size=5 style="color: #FF69B4; text-shadow: 0px 1px 7px 
 
-function reEnable(){return true}
+white;" > <img src="http://88.2295.com/q/2011-10-20/7c40cc2d4669bd49c804ae0f3472110c.gif" width="40" height="40" > Get Down By Effect <img src="http://lh5.googleusercontent.com/-WgzUrQU3ct8/ThqLrelJfJI/AAAAAAAADG8/0eI3Oo_8y_U/w100-h110/Benjol.gif" width="40" height="30" />
+<br><br>
 
-//if IE4+
-document.onselectstart=new Function ("return false")
-
-//if NS6
-if (window.sidebar){
-document.onmousedown=disableselect
-document.onclick=reEnable
-}
-</script>
-<script>
-var message="";
-function clickIE()
-
-{if (document.all)
-{(message);return false;}}
-
-function clickNS(e) {
-if
-(document.layers||(document.getElementById&&!document.all))
-{
-if (e.which==2||e.which==3) {(message);return false;}}}
-if (document.layers)
-{document.captureEvents(Event.MOUSEDOWN);document.  onmousedown=clickNS;}
-else
-{document.onmouseup=clickNS;document.oncontextmenu  =clickIE;}
-
-document.oncontextmenu=new Function("return false")
-</script>
-
-<table style=" background-repeat: no-repeat;"  align="right" border="0" width="100%" >
+          <font face="Orbitron" size="2" color="#FF7F50">
+effect@owl-squad:~\<font face="Orbitron" size="2" color="#FFFFE0"> Berandal - Artefvck - AkuSihCuek404 - Effect - Blck0Wl - LdxMpuzz6  <P>
 
 <br>
-
-<tbody><tr>
-<td  valign="top"><p id="hack" >
-
-<br>
-<br>
-<font style="color:#ffffff;text-shadow:#FF0099 0px 0px 10px"> &nbsp;&nbsp;&nbsp;&nbsp;<b>[+] R0sX_010 Is Now Into Your System...        </font> <br>
-<font style="color:#ffffff;text-shadow:#FF0099 0px 0px 10px"> &nbsp;&nbsp;&nbsp;&nbsp;<b>[+] Dear admin  </font><br>
-<font style="color:#ffffff;text-shadow:#FF0099 0px 0px 10px"> &nbsp;&nbsp;&nbsp;&nbsp;<b>[+] Your Security Is So SLow </font><br>
-<font style="color:#ffffff;text-shadow:#FF0099 0px 0px 10px"> &nbsp;&nbsp;&nbsp;&nbsp;<b>[+] <font style="color:red;text-shadow:#000 0px 0px 3px">R00T</font><font style="color:white;text-shadow:#000 0px 0px 3px"> SMILE</font>  [+]         </font> <br>
-					 <font color="White"> 
-	
-          
-</p></tr>
-</tbody></table>                 </div> 
-<br>
-
-<script type="text/javascript">
-new TypingText(document.getElementById("hack"), 50, function(i) { var ar = new Array("_",""); return " " + ar[i.length % ar.length]; });
-TypingText.runAll();
-
-</script>
-
-    <style> 
- 
-      td
- 
-      {
- 
-        background-color: #000000;
- 
-        font-family: Courier New;
- 
-        font-size:20px;
- 
-        color:#000000;
- 
-        border-color: #000000;
- 
-        border-width:1pt;
- 
-        border-style:solid;
- 
-        border-collapse:collapse;
- 
-        padding:0pt 3pt;
- 
-        vertical-align:top;
- 
-      }
- 
-      table
- 
-      {
- 
-        border-color: #88aace;
- 
-        border-width:0pt 1pt;
- 
-        border-style:dash;
- 
-      }
- 
-      A:Link, A:Visited
- 
-      {
- 
-        color: #88aace;
- 
-      }
- 
-      A.no:Link, A.no:Visited
- 
-      {
- 
-        color: #88aace;
- 
-        text-decoration: none;
- 
-      }
- 
-      A:Hover, A:Visited:Hover , A.no:Hover, A.no:Visited:Hover
- 
-      {
- 
-        color: #88aace;
- 
-        background-color:#2e2e2e;
- 
-        text-decoration:
- 
-        overline underline;
- 
-      }
- 
-      .style1
- 
-      {
- 
-        color: #88aace
- 
-      }
- 
-      .style2
- 
-      {
- 
-        color: 1f1f1f
- 
-      }
- 
-      body
- 
-      {
- 
-        color:white;
-         
-        background-position:right;
- 
-        background-attachment:fixed;
- 
-        </div>
- 
-      }
- 
-    </style>
-        
- 
-</div>
-
-</div>
-<body oncontextmenu="return false" onkeydown="return false">
-<center>
-<h2 class="glow"><font style="color:green;text-shadow:#000 0px 0px 3px"></font><font style="color:red;text-shadow:#000 0px 0px 3px">R00T</font><font style="color:white;text-shadow:#000 0px 0px 3px"> SMILE</font>
-<font style="color:green;text-shadow:#000 0px 0px 3px"></font></h2>
-<img src="https://1.bp.blogspot.com/-r9z7gno_Kmc/WKzuDapzzkI/AAAAAAAAAfs/iEco8UwEuiMxvovwEGuLcZkO0AN8mfxBQCLcB/s1600/logo%2B5.jpg"width="350"height="350">
-<h2 class="glow2" ><font style="color:yellow;text-shadow:#000 0px 0px 3px">.::Pawned By::.</font><br> <span style="color:orange;font-family:Iceland;text-shadow:white 0px 0px 10px">./</span><span style="color:#ffffff;font-family:Iceland;text-shadow:#FF0099 0px 0px 10px">R00T SMILE</span></b></h2>
-<p><b><font style="color:green;text-shadow:#000 0px 0px 3px">Sorry Admin, I Was On Your System. By </font><span style="font-family:Iceland;color:red;text-shadow:#000 0px 0px 3px">Anonymous,</span>
-			<font style="color:green;text-shadow:#000 0px 0px 3px">PLEASE </font><font style="color:blue;text-shadow:#000 0px 0px 3px">CHECK AND PATCH</font>
-			<font style="color:green;text-shadow:#000 0px 0px 3px"> YOUR SECURITY !</font><br><font style="color:yellow;text-shadow:#000 0px 0px 3px">#*#*#*#</font>
-		    </p>
-		</span>
-			<div style="font-size:10px;color:gold;text-shadow:grey 0px 0px 3px">
-		<span style="font-family:Iceland;font-weight:bold;color:#ffffff"><p><font style="color:green;text-shadow:#000 0px 0px 3px">~SECURITY IS JUST AN ILLUSION~</font></p></span>
-	</div>
- 
-<div class="greets">
-<table align=center border="0">
-<tr>
-<td width=100% id=greetz>
-<marquee behavior="scroll" direction="left" scrollamount="4" scrolldelay="55" width="100%">
-<font size="5px" style="font-family: Iceland, sans-serif;color:white;text-shadow: 0 0 3px red, 0px 0px 5px red" >
-<b>-=|[R0sX_010]-[GTr-03]-[......]-[JMN]|=-</font>
-</marquee>
-</td>
-</table></div> 
-<div class="fot">
-Copyrights &copy; R0sX_010
-</div>
-</center>
-</body>
-<object data="http://flash-mp3-player.net/medias/player_mp3.swf" width="0" height="0" type="application/x-shockwave-flash"><param value="#ffffff" name="bgcolor"><param value="mp3=http://zizka.free.fr/_muisc/04-kanye_west-amazing_ft._young_jeezy-(HHKingz.net).mp3&amp;loop=1&amp;autoplay=1&amp;volume=125" name="FlashVars"></object>  
+<font face="Orbitron" size="2" color="pink">
+Please Fix Your System..<BR><br><font face="Orbitron" size="2" color="#ADFF2F">
+<br><font face="Grand Hotel" size="4" color="#FFFAF0">Copyright &copy; 2016 - <font face="Amatic SC" size="3" color="#FFFAF0">Owl Squad</font>
+<!-- #PERCAYA -->
+</BODY>    
+</html>
